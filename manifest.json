@@ -11,14 +11,26 @@
     "default_title": "RefinedQase"
   },
   "background": {
-    "scripts": ["src/script.js"],
+    "scripts": [
+      "src/script.js"
+    ],
     "persistent": false
   },
   "content_scripts": [
     {
-      "matches": ["https://app.qase.io/plan/*/edit/*"],
-      "js": ["src/content.js"]
+      "matches": [
+        "https://app.qase.io/project/*",
+        "https://app.qase.io/plan/*/edit/*"
+      ],
+      "js": [
+        "src/content.js"
+      ]
     }
   ],
-  "permissions": ["tabs", "background", "http://*/*", "https://*/*"]
+  "permissions": [
+    "tabs",
+    "background",
+    "http://*/*",
+    "https://*/*"
+  ]
 }
