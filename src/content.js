@@ -28,10 +28,7 @@ function handleOnTapIcon() {
 async function handlePageChange() {
   const url = getActiveTabUrl();
 
-  if (url.includes("plan")) {
-    await sleep(1000);
-    addLinkToSuiteCaseInTestPlan();
-  } else if (url.includes("project")) {
+  if (url.includes("project")) {
     await sleep(6000);
     addLinkToCaseInRepository();
   }
